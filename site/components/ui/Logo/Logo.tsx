@@ -2,10 +2,10 @@ import Image from 'next/image'
 
 const Logo = ({ className = '', ...props }) => (
   <Image
-    src="https://res.cloudinary.com/dg7vdpqgu/image/upload/v1670285353/Ste_201215_mn0uac.png"
+    src="https://res.cloudinary.com/dg7vdpqgu/image/upload/v1671026229/Ste_201215_mn0uac_wwoanh.png"
     alt="logo"
-    width={70}
-    height={40}
+    width={75}
+    height={50}
   />
 )
 

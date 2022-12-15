@@ -1,9 +1,9 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
+  "title": "codebySte Storefront | Powered by Next.js Commerce",
   "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "description": "codebySte Commerce - https://www.nextjs.org/commerce",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
+    "title": "codebySte Storefront | Powered by Next.js Commerce",
     "description": "Next.js Commerce - https://www.nextjs.org/commerce",
     "type": "website",
     "url": "https://nextjs.org/commerce",
@@ -18,8 +18,8 @@
     ]
   },
   "twitter": {
-    "handle": "@nextjs",
-    "site": "@nextjs",
+    "handle": "@codebySte",
+    "site": "@codeby-ste.vercel.app",
     "cardType": "summary_large_image"
   }
 }
