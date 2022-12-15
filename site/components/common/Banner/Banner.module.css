@@ -1,20 +1,39 @@
 .root {
   @apply overflow-hidden;
 }
-.title span {
-    @apply truncate font-medium text-white p-2;
-  }
-.sdtitle:nth-child(2) {
-    @apply hidden;
+
+.row {
+  @apply inline-block tracking-wide text-white text-sm font-bold truncate;
+  overflow: hidden;
 }
 
-@screen md {
-  .sdtitle:nth-child(1) {
-    @apply hidden;
+.row span {
+  display: inline-block;
+  animation: frames 5s ease-out infinite;
+  transition: opacity .5s;
+}
+
+.row span:before {
+  content: attr(title);
+  animation: switch 10s steps(1) infinite;
+}
+
+@keyframes frames {
+  0% {
+    transform: translateY(150%) rotate(-5deg);
+  }
+  20%,
+  80% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(-150%) rotate(5deg);
   }
 }
-@screen md {
-  .sdtitle:nth-child(2) {
-    @apply inline;
+
+@keyframes switch {
+  50%,
+  100% {
+    content: attr(data-alt);
   }
 }
