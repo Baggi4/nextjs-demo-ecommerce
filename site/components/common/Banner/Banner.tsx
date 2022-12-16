@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className={s.root}>
       <div className="relative bg-indigo-600">
-        <div className="mx-auto max-w-md py-3 px-3 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-md py-3 px-1 sm:px-2 lg:px-8">
           <div className="flex flex-wrap items-center justify-between">
             <div className="flex w-0 flex-1 items-center">
               <span className={s.row}>

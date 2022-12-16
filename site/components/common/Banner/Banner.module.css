@@ -9,7 +9,7 @@
 
 .row span {
   display: inline-block;
-  animation: frames 5s ease-out infinite;
+  animation: frames 5s infinite;
   transition: opacity .5s;
 }
 
