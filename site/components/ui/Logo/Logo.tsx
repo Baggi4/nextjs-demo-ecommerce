@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 const Logo = ({ className = '', ...props }) => (
   <Image
-    src="https://res.cloudinary.com/dg7vdpqgu/image/upload/v1671026229/Ste_201215_mn0uac_wwoanh.png"
+    src="https://res.cloudinary.com/dg7vdpqgu/image/upload/v1671686626/DALLE-Logo-144x144_lqnksn.png"
     alt="logo"
-    width={75}
+    width={50}
     height={50}
   />
 )

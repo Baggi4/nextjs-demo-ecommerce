@@ -41,9 +41,14 @@ export default function Home({
   return (
     <>
       <Hero
-        headline=" Manger des croissants."
-        description="Buy Social Media Audience, Start with 50k, 100k, 1M+... accounts. "
+        headline="Buy, build social media audience."
+        description=""
       />
+      <Marquee variant="secondary">
+        {products.slice(0, 3).map((product: any, i: number) => (
+          <ProductCard key={product.id} product={product} variant="slim" />
+        ))}
+      </Marquee>
       <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
@@ -57,12 +62,6 @@ export default function Home({
           />
         ))}
       </Grid>
-      <Marquee variant="secondary">
-        {products.slice(0, 3).map((product: any, i: number) => (
-          <ProductCard key={product.id} product={product} variant="slim" />
-        ))}
-      </Marquee>
-      
       <Grid layout="B" variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard

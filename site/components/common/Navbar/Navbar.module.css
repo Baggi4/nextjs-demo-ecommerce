@@ -29,6 +29,6 @@
   @apply cursor-pointer;
 
   &:hover {
-    transform: scale(1.05);
+    @apply rotate-180 scale-105 transition;
   }
 }

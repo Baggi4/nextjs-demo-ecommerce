@@ -8,8 +8,7 @@
 
 .leftControl:hover,
 .rightControl:hover {
-  @apply opacity-75 overflow-hidden bg-cover;
-  background-color: var(--violet-dark);
+  @apply opacity-95 transition overflow-hidden bg-cover bg-slate-100 text-black;
 }
 
 .leftControl {

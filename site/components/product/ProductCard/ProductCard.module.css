@@ -96,19 +96,23 @@
 
 /* Variant Slim */
 .slim {
-  @apply bg-transparent relative overflow-hidden
-  box-border;
+  @apply relative overflow-hidden w-full box-border bg-accent-5 rounded-3xl;
+  &:hover {
+    @apply opacity-80;
+    & .productBg:before {
+      transform: scale(0.99);
+    }
+
+    & .productImage {
+      transform: scale(1.15);
+    }
+  }
 }
 
 .slim .header {
-  @apply absolute inset-0 flex items-center justify-end mr-8 z-20;
-}
-
-.slim span {
-  @apply bg-accent-9 text-accent-0 inline-block p-3
-  font-bold text-xl break-words;
+  @apply flex bg-transparent items-center z-20;
 }
 
 .root:global(.secondary) .header span {
-  @apply bg-accent-0 text-accent-9;
+  @apply  text-accent-9;
 }
