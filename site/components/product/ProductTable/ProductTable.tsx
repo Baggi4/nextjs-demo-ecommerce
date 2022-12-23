@@ -53,18 +53,17 @@ export const ProductTable = () => {
   return (
     <Container className="py-12">
       <div className="px-4 sm:px-6 lg:px-8">
-        <div className="sm:flex sm:items-center">
-          <div className="sm:flex-auto">
+        <div className="flex items-center">
+          <div className="flex-auto">
             <h2 className="font-bold text-3xl tracking-wide">Trending</h2>
           </div>
-          <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
-            >
-              View all
-            </button>
-          </div>
+
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 sm:w-auto"
+          >
+            View all
+          </button>
         </div>
         <div className="mt-8 flex flex-col">
           <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -91,7 +90,7 @@ export const ProductTable = () => {
                       >
                         Followers
                       </th>
-                      
+
                       <th
                         scope="col"
                         className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
@@ -100,14 +99,14 @@ export const ProductTable = () => {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200 bg-white">
+                  <tbody className="divide-y divide-gray-100 bg-white">
                     {people.map((person) => (
                       <tr key={person.id}>
                         <td className="whitespace-nowrap py-3 pl-4 pr-3 text-sm sm:pl-6">
                           <div className="flex items-center">
                             <div className="h-10 w-10 flex-shrink-0">
                               <Image
-                                className="h-10 w-10 rounded-full"
+                                className="h-10 w-10 rounded-lg"
                                 src={person.image}
                                 alt=""
                                 width={500}

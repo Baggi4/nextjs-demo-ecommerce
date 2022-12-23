@@ -1,4 +1,6 @@
 .root {
-  @apply h-full bg-primary mx-auto transition-colors duration-150;
+  @apply h-full mx-auto transition-colors duration-150;
   max-width: 2460px;
+ background: rgb(131,58,180);
+background: linear-gradient(103deg, rgba(131,58,180,0.04) 0%, rgba(253,29,29,0.03) 50%, rgba(252,176,69,0.03) 100%);
 }

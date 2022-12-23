@@ -43,12 +43,15 @@ const ProductCard: FC<Props> = ({
         {variant === 'slim' && (
           <>
             <div className={s.header}>
-              <span className="text-base truncate bg-transparent p-3 font-bold text-2xl">
-                {product.name}
-              </span>
+              <div className="flex flex-col">
+                <span className="text-base bg-transparent px-3 pt-3 font-bold text-2xl">
+                  {product.name}
+                </span>
+                <span className="text-sm text-slate-500 italic ml-3 font-semibold">{`${price}`}</span>
+              </div>
             </div>
             {product?.images && (
-              <div>
+              <div className={s.scale}>
                 <Image
                   quality="85"
                   src={product.images[0]?.url || placeholderImg}

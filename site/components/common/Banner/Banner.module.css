@@ -11,14 +11,14 @@
   );
 }
 .row {
-  @apply inline-block tracking-wide text-white text-sm font-bold truncate;
+  @apply relative w-full tracking-wide text-white text-sm font-bold;
   overflow: hidden;
 }
 
 .row span {
   display: inline-block;
   animation: frames 5s infinite;
-  transition: opacity 0.5s;
+  transition: opacity 1ms;
 }
 
 .row span:before {
@@ -28,14 +28,14 @@
 
 @keyframes frames {
   0% {
-    transform: translateY(150%) rotate(-5deg);
+    transform: translateY(-150%) rotateX(90deg);
   }
   20%,
   80% {
     transform: translateY(0) rotate(0);
   }
   100% {
-    transform: translateY(-150%) rotate(5deg);
+    transform: translateY(-150%) rotateX(0deg);
   }
 }
 
