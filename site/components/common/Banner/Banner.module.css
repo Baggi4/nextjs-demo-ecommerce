@@ -1,7 +1,15 @@
 .root {
   @apply overflow-hidden;
 }
-
+.bg {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 78%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
 .row {
   @apply inline-block tracking-wide text-white text-sm font-bold truncate;
   overflow: hidden;
@@ -10,7 +18,7 @@
 .row span {
   display: inline-block;
   animation: frames 5s infinite;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .row span:before {

@@ -21,6 +21,10 @@ const links = [
     name: 'Home',
     url: '/',
   },
+  {
+    name: 'Contact',
+    url: '/contact',
+  },
 ]
 
 const Footer: FC<Props> = ({ className, pages }) => {
@@ -60,7 +64,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
         </div>
         <div className="pt-6 pb-10 flex flex-col md:flex-row justify-between items-center space-y-4 text-accent-6 text-sm">
           <div>
-            <span>&copy; 2022 codebySte. All rights reserved.</span>
+            <span>&copy; 2022 Occount. All rights reserved.</span>
           </div>
           <div className="flex items-center text-primary text-sm">
             <span className="text-primary">Powered by</span>

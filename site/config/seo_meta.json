@@ -1,13 +1,13 @@
 {
-  "title": "codebySte Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "codebySte Commerce - https://www.nextjs.org/commerce",
+  "title": "Occount Storefront | Buy social media audience",
+  "titleTemplate": "Occount",
+  "description": "Occount Marketplace",
   "openGraph": {
-    "title": "codebySte Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "Occount Marketplace | Buy social media audience",
+    "description": "Occount ecommerce - https://www.nextjs.org/commerce",
     "type": "website",
     "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "site_name": "Occount",
     "images": [
       {
         "url": "/card.png",
@@ -18,7 +18,7 @@
     ]
   },
   "twitter": {
-    "handle": "@codebySte",
+    "handle": "@Occount",
     "site": "@codeby-ste.vercel.app",
     "cardType": "summary_large_image"
   }

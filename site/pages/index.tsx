@@ -1,6 +1,6 @@
 import commerce from '@lib/api/commerce'
-import { Layout } from '@components/common'
-import { ProductCard } from '@components/product'
+import { Layout, Stats } from '@components/common'
+import { ProductCard, ProductTable } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
@@ -40,15 +40,13 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <Hero
-        headline="Buy, build social media audience."
-        description=""
-      />
+      <Hero headline="Buy, build social media audience." description="" />
       <Marquee variant="secondary">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>
+      <ProductTable />
       <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
@@ -84,6 +82,7 @@ export default function Home({
         categories={categories}
         brands={brands}
       /> */}
+      <Stats />
     </>
   )
 }

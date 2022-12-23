@@ -30,6 +30,7 @@
   --accent-7: #333333;
   --accent-8: #111111;
   --accent-9: #000;
+  --gradient-1: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 78%, rgba(252,176,69,1) 100%);
   --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
     'Helvetica', sans-serif;
 }
