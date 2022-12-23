@@ -1,5 +1,5 @@
 import commerce from '@lib/api/commerce'
-import { Layout, Stats } from '@components/common'
+import { Layout, Stats, Features } from '@components/common'
 import { ProductCard, ProductTable } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
@@ -47,7 +47,8 @@ export default function Home({
         ))}
       </Marquee>
       <ProductTable />
-      <Grid variant="filled">
+      <Features />
+      {/* <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
@@ -71,7 +72,7 @@ export default function Home({
             }}
           />
         ))}
-      </Grid>
+      </Grid> */}
       <Marquee>
         {products.slice(3).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
