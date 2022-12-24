@@ -9,12 +9,12 @@ const Banner = () => {
             <p className="font-medium text-white">
               <span className={s.row}>
                 <span
-                  title="Big news ! we annonced new Products !"
+                  title="New Products listed !"
                   data-alt="Hi, welcome to Occount !"
                 ></span>
               </span>
               <span className="ml-2">
-                <a href="#" className="font-bold text-white underline">
+                <a href="#trending" className="font-bold text-white underline">
                   Learn more
                 </a>
               </span>

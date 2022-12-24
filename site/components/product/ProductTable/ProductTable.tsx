@@ -49,18 +49,28 @@ const people = [
       'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
 ]
+
 export const ProductTable = () => {
   return (
     <Container className="py-12">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center">
-          <div className="flex-auto">
+          <div className="flex flex-1">
             <h2 className="font-bold text-3xl tracking-wide">Trending</h2>
+            <Image
+              src={
+                'https://res.cloudinary.com/dg7vdpqgu/image/upload/v1671835843/icons8-fire-96_qlmuvt.png'
+              }
+              className="h-10 w-10 rounded-lg"
+              alt="Trending fire"
+              width={50}
+              height={50}
+            />
           </div>
 
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 sm:w-auto"
+            className="inline-flex items-center justify-center rounded-md border border-gray-200 bg-gray-100 px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 sm:w-auto"
           >
             View all
           </button>
